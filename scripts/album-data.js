@@ -3,6 +3,10 @@ const album = {
   artist: 'Pablo Picasso',
   releaseInfo: '1909 Spanish Records',
   albumArtUrl: 'assets/images/album_covers/01.png',
+  {
+    $('#album-title').text(album.title);
+    $('img#album-cover-art').attr('src', album.albumArtUrl);
+  },
   songs: [
     { title: 'Blue', duration: '161.71', soundFileUrl: 'assets/music/blue.mp3' },
     { title: 'Green', duration: '103.96', soundFileUrl: 'assets/music/green.mp3' },
